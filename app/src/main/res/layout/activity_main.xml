@@ -26,6 +26,15 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_title"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
+
+    <Spinner
+        android:id="@+id/sp_lotto"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/btn_lotto"
+        app:layout_constraintTop_toTopOf="@id/btn_lotto"/>
 <!--        Button for Display Lotto-->
     <Button
         android:id="@+id/btn_lotto"
@@ -33,8 +42,8 @@
         android:layout_height="wrap_content"
         android:text="Lotto"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/sp_lotto"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_margin="40dp"/>
+        android:layout_marginBottom="40dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

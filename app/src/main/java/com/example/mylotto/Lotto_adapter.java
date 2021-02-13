@@ -27,12 +27,12 @@ public class Lotto_adapter extends RecyclerView.Adapter<Lotto_adapter.ViewHolder
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            tv0 = (TextView)itemView.findViewById(R.id.tv1);
-            tv1 = (TextView)itemView.findViewById(R.id.tv2);
-            tv2 = (TextView)itemView.findViewById(R.id.tv3);
-            tv3 = (TextView)itemView.findViewById(R.id.tv4);
-            tv4 = (TextView)itemView.findViewById(R.id.tv5);
-            tv5 = (TextView)itemView.findViewById(R.id.tv6);
+            tv0 = (TextView)itemView.findViewById(R.id.tv0);
+            tv1 = (TextView)itemView.findViewById(R.id.tv1);
+            tv2 = (TextView)itemView.findViewById(R.id.tv2);
+            tv3 = (TextView)itemView.findViewById(R.id.tv3);
+            tv4 = (TextView)itemView.findViewById(R.id.tv4);
+            tv5 = (TextView)itemView.findViewById(R.id.tv5);
         }
     }
     @NonNull
@@ -93,7 +93,5 @@ public class Lotto_adapter extends RecyclerView.Adapter<Lotto_adapter.ViewHolder
             case 4 : tv.setBackground(ContextCompat.getDrawable(mContext,R.drawable.lotto_green));
                 break;
         }
-
-
     }
 }
